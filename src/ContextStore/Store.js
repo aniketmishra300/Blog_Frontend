@@ -10,7 +10,7 @@ const Store = (props) => {
   useEffect(()=>{ 
     const fetchdata =async ()=>{
       try{
-        const response = await axios.get('https://blog-backend-5tr2.onrender.com')
+        const response = await axios.get('https://blog-backend-5tr2.onrender.com/api/blog')
         setData(response.data)
         console.log(response.data)
   
